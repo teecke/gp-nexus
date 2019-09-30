@@ -1,0 +1,3 @@
+#!/bin/bash
+mkdir -p /var/backups/gp/nexus/sonatype-work
+rsync -a --delete /sonatype-work/ /var/backups/gp/nexus/sonatype-work/
