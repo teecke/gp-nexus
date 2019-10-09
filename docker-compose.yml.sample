@@ -2,11 +2,11 @@ version: '3.7'
 
 services:
   nexus:
-    image: teecke/nexus:0.1.0
+    image: teecke/nexus:0.1.1
     ports:
       - 8081:8081
     volumes:
-      - sonatype-work:/sonatype-work
+      - ./sonatype-work:/sonatype-work
       
 networks:
     default:
