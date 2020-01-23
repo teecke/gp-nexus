@@ -1,4 +1,4 @@
-FROM sonatype/nexus:2.14.14-01
+FROM sonatype/nexus:3
 
 # Packages
 USER root
