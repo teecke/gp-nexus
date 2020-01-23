@@ -3,6 +3,7 @@ version: '3.7'
 services:
   nexus:
     image: teecke/nexus:0.2.0
+    build: nexus
     ports:
       - 8081:8081
     volumes:
