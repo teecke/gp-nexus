@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.0 (2020-01-24)
+
+### Upgrade
+
+* Service refactor with assets install ([36dad6b](https://github.com/teecke/gp-nexus/commit/36dad6b))
+
+### Build
+
+* Update Auto Release Log adding v0.3.0 info with JPL ([0b560d0](https://github.com/teecke/gp-nexus/commit/0b560d0))
+
+### Docs
+
+* Generate v0.2.0 changelog with JPL ([717a303](https://github.com/teecke/gp-nexus/commit/717a303))
+
 ## v0.2.0 (2020-01-23)
 
 ### New
