@@ -1,17 +1,19 @@
 #!/bin/bash
 
-# @description Run bash linter
+set -eu
+
+# @description Install item assets
 #
 # @example
-#   run-bash-linter
+#   assets-install
 #
 # @arg $1 Task: "brief", "help" or "exec"
 #
-# @exitcode The result of the shellckeck
+# @exitcode The result of the assets installation
 #
 # @stdout "Not implemented" message if the requested task is not implemented
 #
-function run-bash-linter() {
+function assets-install() {
 
     # Init
     local briefMessage
@@ -64,4 +66,4 @@ EOF
 }
 
 # Main
-run-bash-linter "$@"
+assets-install "$@"
