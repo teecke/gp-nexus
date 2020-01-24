@@ -19,7 +19,10 @@ function run-bash-linter() {
 
     briefMessage="Install assets"
     helpMessage=$(cat <<EOF
-Install Nexus 3 ssets. It will create the "data/nexus-data" directory with all permissions (777)
+Install Nexus 3 service aassets:
+
+* Create the "data/nexus_data" directory with all permissions (777)
+* Create the network "platform_services"
 EOF
 )
 
@@ -32,6 +35,15 @@ EOF
             showHelpMessage "${FUNCNAME[0]}" "$helpMessage"
             ;;
         exec)
+            # Create network
+            if [ "$(docker network ls -f name='platform_services' -q)" == "" ]; then
+                echo -n "- Creating docker network 'platform_services' ..."
+                docker network create platform_services
+                echo "[OK]"
+            else
+                echo "The 'platform_services' docker network already exists, skipping"
+            fi
+            # Create directories
             for directory in data data/nexus-data; do
                 if [ ! -d ${directory} ]; then
                     echo -n "- Creating '${directory}' directory..."
