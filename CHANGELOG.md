@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.1 (2020-01-24)
+
+### Update
+
+* Review devcontrol scripts ([f35ba5f](https://github.com/teecke/gp-nexus/commit/f35ba5f))
+
+### Build
+
+* Update Auto Release Log adding v0.3.1 info with JPL ([0ee9fb8](https://github.com/teecke/gp-nexus/commit/0ee9fb8))
+
+### Docs
+
+* Generate v0.3.0 changelog with JPL ([d8a7cef](https://github.com/teecke/gp-nexus/commit/d8a7cef))
+
 ## v0.3.0 (2020-01-24)
 
 ### Upgrade
