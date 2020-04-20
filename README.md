@@ -1,6 +1,6 @@
 # DEPRECATED
 
-Please visit https://github.com/tpbtools/gp-nexus
+Please visit https://github.com/ayudadigital/gp-nexus
 
 # Generic Platform - Nexus Service
 
